@@ -1,0 +1,9 @@
+dS/dt=LAM*(1-((S+I+D)/Smax))*S-beta1*S*V
+dI/dt=beta1*exp(-k1*tau)*delay(S,tau)*delay(V,tau)-dI*I
+dV/dt=p*I-beta2*S*V-dV*V
+dD/dt=dI*I-dD*D
+par  beta1=0.01,tau=0, p=12, dV=5, LAM=0.8, Smax=15, dI=0.5, beta2=1, dD=1, k1=0.005,
+init S=.05, I=0, V=0.08, D=0
+@ xlo=-.2,xhi=1.6,ylo=-1,yhi=1,xp=S,yp=I, zp=V, wp=D,total=4000
+@maxstor=50000
+done

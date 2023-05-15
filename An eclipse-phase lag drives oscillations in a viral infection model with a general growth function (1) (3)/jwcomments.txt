@@ -1,0 +1,8 @@
+Table 1
++ parameter values are taken from modelling papers, which I expect reference experimental papers.  We should try to get closer to experimental sources
++ δ has units per day, τ should be included with units of days
++ p has units virus per cell per day
++ estimated is not the correct word, since that implies data and fitting.  These should have sources.
+
+Table 2
++ initial conditions are functions (all states are now functions, not just S and V).  Are we using constant functions for ICs?  
